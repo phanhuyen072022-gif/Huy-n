@@ -3,7 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phan Huyền | Website CNTT</title>
+
+<title>Website CNTT - PhanHuyen</title>
+
+<!-- SEO -->
+<meta name="description" content="Website Công Nghệ Thông Tin - PhanHuyen. Chia sẻ tin tức lập trình, CNTT và dự án sinh viên.">
+
+<!-- Open Graph: hiển thị khi gửi link -->
+<meta property="og:title" content="Website CNTT - PhanHuyen">
+<meta property="og:description" content="Website Tin Tức Lập Trình & Công Nghệ Thông Tin">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://phanhuyen072022-gif.github.io/Huy-n/">
+<meta property="og:image" content="https://phanhuyen072022-gif.github.io/Huy-n/avatar.jpg">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma}
@@ -20,9 +31,10 @@ header{
     text-align:center
 }
 header img{
-    width:130px;height:130px;border-radius:50%;
+    width:140px;height:140px;border-radius:50%;
     border:4px solid #9d4edd;
-    margin-bottom:20px
+    margin-bottom:20px;
+    object-fit:cover
 }
 header h1{font-size:42px}
 header p{color:#cdb4ff;font-size:18px;margin-top:10px}
@@ -74,7 +86,7 @@ section p{color:#ddd;line-height:1.9}
     transition:.3s
 }
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-6px);
     box-shadow:0 0 20px rgba(157,78,221,.5)
 }
 .card h3{color:#c77dff;margin-bottom:12px}
@@ -114,9 +126,9 @@ footer{
 <body>
 
 <header>
-   <img src="./avatar.jpg" alt="Avatar Phan Huyền">
-    <h1>Phan Huyền</h1>
-    <p>Website Tin Tức Lập Trình & Công Nghệ Thông Tin</p>
+    <img src="avatar.jpg" alt="Avatar PhanHuyen">
+    <h1>PhanHuyen</h1>
+    <p>Website Công Nghệ Thông Tin & Lập Trình</p>
 </header>
 
 <nav>
@@ -131,9 +143,9 @@ footer{
 <section id="about">
     <h2>👋 Giới thiệu</h2>
     <p>
-        Tôi là Phan Huyền, sinh viên Công nghệ Thông tin.
-        Website này được xây dựng nhằm chia sẻ tin tức lập trình,
-        kiến thức CNTT và giới thiệu các dự án học tập.
+        Tôi là PhanHuyen, sinh viên Công Nghệ Thông Tin.
+        Website được xây dựng nhằm chia sẻ tin tức lập trình,
+        kiến thức CNTT và các dự án học tập.
     </p>
 </section>
 
@@ -142,18 +154,18 @@ footer{
     <div class="grid">
         <div class="card">
             <div class="news-date">19/01/2026</div>
-            <h3>Ngành Công Nghệ Thông Tin là gì?</h3>
-            <p>Giới thiệu tổng quan ngành CNTT, cơ hội nghề nghiệp.</p>
+            <h3>Ngành Công Nghệ Thông Tin</h3>
+            <p>Tổng quan ngành CNTT và cơ hội nghề nghiệp.</p>
         </div>
         <div class="card">
             <div class="news-date">18/01/2026</div>
-            <h3>Vai trò của JavaScript trong Web</h3>
-            <p>JavaScript giúp website tương tác và hiện đại.</p>
+            <h3>JavaScript trong Web</h3>
+            <p>Ngôn ngữ tạo nên website hiện đại.</p>
         </div>
         <div class="card">
             <div class="news-date">17/01/2026</div>
-            <h3>Học lập trình Web bắt đầu từ đâu?</h3>
-            <p>HTML, CSS, JavaScript là nền tảng quan trọng.</p>
+            <h3>Bắt đầu học Web</h3>
+            <p>HTML, CSS, JavaScript là nền tảng.</p>
         </div>
     </div>
 </section>
@@ -163,7 +175,7 @@ footer{
     <div class="grid">
         <div class="card">
             <h3>Front-end</h3>
-            <p>HTML, CSS, JavaScript, Responsive</p>
+            <p>HTML, CSS, JavaScript</p>
         </div>
         <div class="card">
             <h3>Back-end</h3>
@@ -180,12 +192,12 @@ footer{
     <h2>📂 Dự án</h2>
     <div class="grid">
         <div class="card">
-            <h3>Website Tin Tức CNTT</h3>
-            <p>Website chia sẻ tin tức lập trình.</p>
+            <h3>Website CNTT</h3>
+            <p>Trang tin tức và kiến thức lập trình.</p>
         </div>
         <div class="card">
             <h3>Quản lý sinh viên</h3>
-            <p>Ứng dụng quản lý bằng SQL.</p>
+            <p>Ứng dụng CSDL SQL.</p>
         </div>
         <div class="card">
             <h3>Portfolio cá nhân</h3>
@@ -197,15 +209,9 @@ footer{
 <section id="timeline">
     <h2>⏳ Timeline học tập</h2>
     <div class="timeline">
-        <div class="timeline-item">
-            <p><b>2023</b> – Bắt đầu học CNTT</p>
-        </div>
-        <div class="timeline-item">
-            <p><b>2024</b> – Học Web & CSDL</p>
-        </div>
-        <div class="timeline-item">
-            <p><b>2025</b> – Làm dự án Website</p>
-        </div>
+        <div class="timeline-item"><b>2023</b> – Bắt đầu học CNTT</div>
+        <div class="timeline-item"><b>2024</b> – Web & CSDL</div>
+        <div class="timeline-item"><b>2025</b> – Hoàn thiện Website</div>
     </div>
 </section>
 
@@ -217,7 +223,7 @@ footer{
 </section>
 
 <footer>
-    © 2026 Phan Huyền | Website Tin Tức CNTT
+    © 2026 PhanHuyen | Website CNTT
 </footer>
 
 </body>
