@@ -1,141 +1,175 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Võ Trường Vĩnh | Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<title>Phan Huyền | Portfolio</title>
 
-        body {
-            background: #0f0f1a;
-            color: #fff;
-        }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Tahoma}
+body{background:#0b0b16;color:#fff}
 
-        /* HEADER */
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #1a1a2e, #2b2b5f);
-        }
+/* HEADER */
+header{
+    height:100vh;
+    background:linear-gradient(135deg,#1a1a2e,#3a0ca3);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center
+}
+header img{
+    width:120px;height:120px;border-radius:50%;
+    border:4px solid #9d4edd;margin-bottom:20px
+}
+header h1{font-size:40px}
+header p{color:#d0bfff;font-size:18px;margin-top:10px}
 
-        header img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #7c4dff;
-            margin-bottom: 15px;
-        }
+/* NAV */
+nav{
+    position:sticky;top:0;z-index:10;
+    background:#151528;
+    padding:15px;
+    text-align:center
+}
+nav a{
+    color:#fff;text-decoration:none;
+    margin:0 15px;font-weight:600
+}
+nav a:hover{color:#9d4edd}
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+/* SECTION */
+section{
+    max-width:1000px;
+    margin:60px auto;
+    background:#151528;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(157,78,221,.3)
+}
+section h2{
+    color:#9d4edd;
+    margin-bottom:20px;
+    font-size:28px
+}
+section p,li{color:#ddd;line-height:1.8}
 
-        header p {
-            color: #b388ff;
-            font-size: 18px;
-        }
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px
+}
+.card{
+    background:#1f1f3d;
+    padding:20px;
+    border-radius:12px
+}
+.card h3{color:#c77dff;margin-bottom:10px}
 
-        /* NAV */
-        nav {
-            background: #1a1a2e;
-            padding: 15px;
-            text-align: center;
-        }
+/* TIMELINE */
+.timeline-item{
+    border-left:3px solid #9d4edd;
+    padding-left:15px;
+    margin-bottom:20px
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #7c4dff;
-        }
-
-        /* SECTION */
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #1a1a2e;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(124, 77, 255, 0.2);
-        }
-
-        section h2 {
-            color: #7c4dff;
-            margin-bottom: 15px;
-        }
-
-        section p, li {
-            line-height: 1.7;
-            color: #ddd;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #aaa;
-        }
-    </style>
+/* FOOTER */
+footer{
+    background:#0b0b16;
+    text-align:center;
+    padding:25px;
+    color:#aaa
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <img src="https://via.placeholder.com/100" alt="Avatar">
-    <h1>Võ Trường Vĩnh</h1>
+    <img src="https://via.placeholder.com/120" alt="Avatar">
+    <h1>Phan Huyền</h1>
     <p>Web Developer | Full-stack Developer</p>
 </header>
 
 <nav>
-    <a href="#gioithieu">Giới thiệu</a>
-    <a href="#kynang">Kỹ năng</a>
-    <a href="#dinhhuong">Định hướng</a>
-    <a href="#lienhe">Liên hệ</a>
+    <a href="#about">Giới thiệu</a>
+    <a href="#skills">Kỹ năng</a>
+    <a href="#projects">Dự án</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#career">Định hướng</a>
+    <a href="#contact">Liên hệ</a>
 </nav>
 
-<section id="gioithieu">
+<section id="about">
     <h2>👋 Giới thiệu</h2>
     <p>
-        Tôi là Võ Trường Vĩnh, sinh viên CNTT định hướng Web Developer.
-        Tôi yêu thích công nghệ, luôn chủ động học hỏi và mong muốn trở thành
-        Full-stack Developer chuyên nghiệp.
+        Tôi là Phan Huyền, sinh viên Công nghệ Thông tin,
+        định hướng phát triển Web Developer.
+        Tôi yêu thích lập trình, thiết kế giao diện
+        và xây dựng website phục vụ học tập và thực tế.
     </p>
 </section>
 
-<section id="kynang">
+<section id="skills">
     <h2>🛠️ Kỹ năng</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>PHP, MySQL cơ bản</li>
-        <li>Git & GitHub</li>
-        <li>Thiết kế giao diện Web</li>
-    </ul>
+    <div class="grid">
+        <div class="card">
+            <h3>Front-end</h3>
+            <p>HTML, CSS, JavaScript, Responsive</p>
+        </div>
+        <div class="card">
+            <h3>Back-end</h3>
+            <p>PHP cơ bản, MySQL</p>
+        </div>
+        <div class="card">
+            <h3>Công cụ</h3>
+            <p>Git, GitHub, VS Code</p>
+        </div>
+    </div>
 </section>
 
-<section id="dinhhuong">
+<section id="projects">
+    <h2>📂 Dự án</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Website Tin Tức Lập Trình</h3>
+            <p>Website chia sẻ tin tức lập trình và CNTT.</p>
+        </div>
+        <div class="card">
+            <h3>Quản lý sinh viên</h3>
+            <p>Ứng dụng quản lý sinh viên bằng SQL.</p>
+        </div>
+        <div class="card">
+            <h3>Portfolio cá nhân</h3>
+            <p>Website giới thiệu bản thân.</p>
+        </div>
+    </div>
+</section>
+
+<section id="timeline">
+    <h2>⏳ Timeline học tập</h2>
+    <div class="timeline-item">
+        <p><b>2023</b> – Bắt đầu học CNTT</p>
+    </div>
+    <div class="timeline-item">
+        <p><b>2024</b> – Học Web & Cơ sở dữ liệu</p>
+    </div>
+    <div class="timeline-item">
+        <p><b>2025</b> – Làm dự án Website</p>
+    </div>
+</section>
+
+<section id="career">
     <h2>💡 Định hướng nghề nghiệp</h2>
     <p>
-        Trong thời gian tới, tôi tập trung phát triển kỹ năng Front-end,
-        sau đó mở rộng sang Back-end để trở thành Full-stack Developer.
-        Mục tiêu của tôi là xây dựng các website và hệ thống quản lý
-        phục vụ thực tế.
+        Mục tiêu của tôi là trở thành Full-stack Developer,
+        có thể xây dựng website hoàn chỉnh từ giao diện
+        đến xử lý dữ liệu.
     </p>
 </section>
 
-<section id="lienhe">
+<section id="contact">
     <h2>📬 Liên hệ</h2>
     <p>📧 Email: phanhuyen0909@gmail.com</p>
     <p>📱 Điện thoại: 0794365654</p>
@@ -143,7 +177,7 @@
 </section>
 
 <footer>
-    © 2026 Võ Trường Vĩnh | Portfolio cá nhân
+    © 2026 Phan Huyền | Portfolio Website
 </footer>
 
 </body>
