@@ -1,151 +1,198 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Website Tin Tức Lập Trình & CNTT</title>
+<meta charset="UTF-8">
+<title>Website Tin Tức Lập Trình & CNTT</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f4f8;
-        }
+<style>
+    body{
+        margin:0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: radial-gradient(circle at top, #222 0%, #0e0e0e 60%);
+        color:#eee;
+    }
 
-        header {
-            background-color: #0a58ca;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+    h1,h2,h3{
+        color:#f5c542;
+        margin:0;
+    }
 
-        nav {
-            background-color: #212529;
-            padding: 12px;
-            text-align: center;
-        }
+    .section{
+        width:90%;
+        margin:40px auto;
+        padding:30px;
+        border-radius:18px;
+        background: linear-gradient(180deg,#1b1b1b,#121212);
+        box-shadow: 0 0 40px rgba(0,0,0,0.7);
+        border:2px solid #f5c542;
+    }
 
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .section-title{
+        font-size:30px;
+        margin-bottom:25px;
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
 
-        nav a:hover {
-            color: #0d6efd;
-        }
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        gap:25px;
+    }
 
-        .container {
-            width: 85%;
-            margin: 20px auto;
-        }
+    .card{
+        background:#0f0f0f;
+        border-radius:15px;
+        padding:22px;
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05),
+                    0 10px 30px rgba(0,0,0,0.6);
+        transition:0.3s;
+    }
 
-        .news {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+    .card:hover{
+        transform: translateY(-6px);
+        box-shadow: 0 0 25px rgba(245,197,66,0.4);
+    }
 
-        .news h2 {
-            color: #0a58ca;
-        }
+    .card h3{
+        margin-bottom:10px;
+        font-size:20px;
+        display:flex;
+        align-items:center;
+        gap:8px;
+    }
 
-        .date {
-            font-size: 13px;
-            color: gray;
-            margin-bottom: 10px;
-        }
+    .card p{
+        color:#ccc;
+        line-height:1.6;
+        font-size:14.5px;
+    }
 
-        button {
-            padding: 8px 14px;
-            background-color: #0d6efd;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    .date{
+        font-size:13px;
+        color:#f5c542;
+        margin:8px 0 12px;
+        display:flex;
+        align-items:center;
+        gap:6px;
+    }
 
-        button:hover {
-            background-color: #084298;
-        }
+    /* Contact */
+    .contact p{
+        margin:10px 0;
+        font-size:16px;
+    }
 
-        footer {
-            background-color: #212529;
-            color: white;
-            text-align: center;
-            padding: 12px;
-        }
-    </style>
+    .contact span{
+        color:#f5c542;
+    }
+
+    footer{
+        text-align:center;
+        padding:15px;
+        color:#aaa;
+        font-size:14px;
+    }
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>📰 Website Tin Tức Lập Trình & Công Nghệ Thông Tin</h1>
-    <p>Cập nhật kiến thức CNTT – Lập trình – Công nghệ mới</p>
-</header>
+<!-- KỸ NĂNG -->
+<div class="section">
+    <div class="section-title">🚀 Kỹ Năng & Chuyên Môn</div>
 
-<nav>
-    <a href="#">Trang chủ</a>
-    <a href="#">Lập trình</a>
-    <a href="#">Công nghệ</a>
-    <a href="#">AI</a>
-    <a href="#">Sinh viên IT</a>
-</nav>
+    <div class="grid">
+        <div class="card">
+            <h3>🐍 Python</h3>
+            <p>Sử dụng thành thạo Python cho các dự án phát triển phần mềm và xử lý dữ liệu.</p>
+        </div>
 
-<div class="container">
+        <div class="card">
+            <h3>☕ Java</h3>
+            <p>Phát triển ứng dụng Android bằng Java, có kinh nghiệm thực tế từ dự án TopCV.</p>
+        </div>
 
-    <div class="news">
-        <h2>Lập trình là gì?</h2>
-        <p class="date">20/01/2026</p>
-        <p>
-            Lập trình là quá trình viết ra các đoạn mã nguồn để điều khiển máy tính
-            thực hiện các công việc cụ thể như xử lý dữ liệu, xây dựng website,
-            phần mềm và ứng dụng.
-        </p>
-        <button onclick="xemThem()">Xem thêm</button>
+        <div class="card">
+            <h3>🔐 Data Security</h3>
+            <p>Bảo mật và theo dõi dữ liệu, đảm bảo an toàn thông tin hệ thống.</p>
+        </div>
+
+        <div class="card">
+            <h3>👥 Làm Việc Nhóm</h3>
+            <p>Kỹ năng phối hợp, lập kế hoạch và đóng góp ý kiến hiệu quả trong team.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Tiếng Anh</h3>
+            <p>IELTS 6.5 – VSTEP. Đọc hiểu tài liệu kỹ thuật và giao tiếp chuyên môn.</p>
+        </div>
     </div>
+</div>
 
-    <div class="news">
-        <h2>Ngành Công Nghệ Thông Tin là gì?</h2>
-        <p class="date">19/01/2026</p>
-        <p>
-            Công nghệ thông tin (CNTT) là ngành học nghiên cứu về máy tính,
-            mạng máy tính, phần mềm và các hệ thống xử lý thông tin.
-        </p>
+<!-- BÀI VIẾT / TRẢI NGHIỆM -->
+<div class="section">
+    <div class="section-title">📰 Tin Tức & Trải Nghiệm CNTT</div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🔐 Bảo Mật Dữ Liệu Trong Ứng Dụng Mobile</h3>
+            <div class="date">📅 15/01/2026</div>
+            <p>Khám phá các phương pháp bảo mật dữ liệu hiện đại trong phát triển ứng dụng mobile,
+               từ mã hóa AES đến phòng chống tấn công.</p>
+        </div>
+
+        <div class="card" style="border:2px solid #f5c542;">
+            <h3>💻 Kinh Nghiệm Phát Triển Ứng Dụng TopCV</h3>
+            <div class="date">📅 08/01/2026</div>
+            <p>Chia sẻ hành trình phát triển ứng dụng TopCV trên Android,
+               những thách thức và bài học thực tế.</p>
+        </div>
+
+        <div class="card">
+            <h3>🐍 Python – Ngôn Ngữ Lập Trình Ưa Thích</h3>
+            <div class="date">📅 02/01/2026</div>
+            <p>Lý do Python trở thành lựa chọn hàng đầu cho sinh viên CNTT
+               và các ứng dụng thực tế.</p>
+        </div>
+
+        <div class="card">
+            <h3>🎓 Từ Sinh Viên Đến Developer</h3>
+            <div class="date">📅 28/12/2025</div>
+            <p>Hành trình học tập tại Đại học Nam Cần Thơ và những kỹ năng cần thiết
+               để bước vào môi trường làm việc chuyên nghiệp.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚖️ Cân Bằng Công Việc & Đam Mê</h3>
+            <div class="date">📅 20/12/2025</div>
+            <p>Chia sẻ cách cân bằng giữa công việc lập trình căng thẳng
+               và sở thích cá nhân.</p>
+        </div>
+
+        <div class="card">
+            <h3>⭐ Tình Nguyện & Phát Triển Bản Thân</h3>
+            <div class="date">📅 15/12/2025</div>
+            <p>Những trải nghiệm ý nghĩa từ hoạt động tình nguyện
+               và giá trị mang lại cho sinh viên CNTT.</p>
+        </div>
     </div>
+</div>
 
-    <div class="news">
-        <h2>Vai trò của JavaScript trong phát triển Web</h2>
-        <p class="date">18/01/2026</p>
-        <p>
-            JavaScript là ngôn ngữ lập trình phổ biến giúp website có khả năng
-            tương tác, xử lý sự kiện và nâng cao trải nghiệm người dùng.
-        </p>
-    </div>
+<!-- LIÊN HỆ -->
+<div class="section contact">
+    <div class="section-title">📬 Liên Hệ</div>
 
-    <div class="news">
-        <h2>Trí tuệ nhân tạo (AI) trong ngành CNTT</h2>
-        <p class="date">17/01/2026</p>
-        <p>
-            AI đang được ứng dụng rộng rãi trong CNTT như nhận diện hình ảnh,
-            xử lý ngôn ngữ tự nhiên và hỗ trợ lập trình viên viết code.
-        </p>
-    </div>
-
+    <p>📧 Email: <span>vunguyen17102004@gmail.com</span></p>
+    <p>📱 Điện thoại: <span>0794365654</span></p>
+    <p>🌐 Facebook: <span>facebook.com/Vu.17102004</span></p>
+    <p>📍 Địa chỉ: <span>An Bình, Ninh Kiều, TP. Cần Thơ</span></p>
 </div>
 
 <footer>
-    <p>© 2026 Website Tin Tức Lập Trình & CNTT | Sinh viên Đại học Nam Cần Thơ</p>
+    © 2026 Website Tin Tức Lập Trình & Công Nghệ Thông Tin
 </footer>
-
-<script>
-    function xemThem() {
-        alert("Chức năng xem chi tiết bài viết sẽ được phát triển trong phiên bản tiếp theo!");
-    }
-</script>
 
 </body>
 </html>
